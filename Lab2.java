@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class Lab2 {
 
-    public static ArrayList<String> generatePalindromeSequences(int N) {
+    public ArrayList<String> generatePalindromeSequences(int N) {
         // Initialize an ArrayList to store the palindrome sequences
         ArrayList<String> result = new ArrayList<>();
         // Call the helper function to generate palindrome sequences
@@ -11,7 +11,7 @@ public class Lab2 {
         return result;
     }
 
-    private static void generatePalindromesHelper(int N, ArrayList<String> result) {
+    private void generatePalindromesHelper(int N, ArrayList<String> result) {
         // Base case: when N is 0, add an empty string to the result
         if (N == 0) {
             result.add("");
