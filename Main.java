@@ -3,6 +3,7 @@ import java.util.ArrayList;
 public class Main {
     public static void main(String[] args) {
         Lab2 lab2 = new Lab2();
+        VirtualDonut virtualDonut = new VirtualDonut();
 
         for (int i = 1; i <= 10; i++) {
             ArrayList<String> sequences = lab2.generatePalindromeSequences(i);
@@ -10,5 +11,9 @@ public class Main {
             System.out.println(sequences);
             System.out.println();
         }
+
+        ArrayList<String> palindromes = lab2.palindromeDonut(3, 128);
+        System.out.println(palindromes.size());
+        System.out.println(palindromes);
     }
 }
